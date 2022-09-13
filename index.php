@@ -13,6 +13,7 @@ queste domande e risposte con PHP.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Google Faq</title>
@@ -50,8 +51,9 @@ queste domande e risposte con PHP.
             </ul>
         </div>
     </header>
-
-    <main class="container-fluid">
+    
+    <!-- main -->
+    <main class="container-fluid pb-3">
                     <!-- <a href='#' class='text-decoration-none'></a> -->
         <?php
             $paragraphs = [
@@ -118,6 +120,34 @@ queste domande e risposte con PHP.
         </div>
     </main>
 
-    <footer></footer>
+    <!-- footer -->
+    <footer class="container-fluid eb_backcolor py-2">
+        <div class="eb_foot m-auto d-flex justify-content-between align-items-center">
+            <div>
+                <ul class="d-flex pt-2 align-items-center">
+                    <?php
+                        $links = ['Google', 'Tutto su Google', 'Privacy', 'Termini'];
+                        foreach($links as $link){
+                            echo "<li class='list-unstyled px-3'>" . "<a class='text-decoration-none text-secondary'>" . $link . "</a>" . "</li>";
+                        }
+                    ?>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="eb_svg px-2">
+                    <img src="image/chat.png" alt="">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected value="1">Italiano</option>
+                    <?php
+                        $langs = ['Inglese', 'Francese', 'Spagnolo', 'Tedesco', 'Cinese', 'Russo', 'Giapponese'];
+                        foreach($langs as $key => $lang){
+                            echo "<option value='$key'>$lang</option>";
+                        }
+                    ?>
+                </select>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

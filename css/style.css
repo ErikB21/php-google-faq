@@ -60,3 +60,15 @@ h2{
 p{
     padding: 10px 0;
 }
+
+/* regole footer */
+.eb_backcolor{
+    background-color: #F5F5F5;
+}
+.eb_foot{
+    width: 87vw;
+}
+
+.eb_svg img{
+    width: 100%!important;
+}
