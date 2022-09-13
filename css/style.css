@@ -1,3 +1,11 @@
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 999;
+    background-color: whitesmoke;
+}
+
 .logo{
     width:150px;
 }
@@ -18,4 +26,9 @@
 
 .eb_grid_2 img{
     width: 40px;
+}
+
+.eb_main{
+    width: 80vw;
+    margin-top: 100px;
 }
