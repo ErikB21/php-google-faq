@@ -1,0 +1,21 @@
+.logo{
+    width:150px;
+}
+.logo img{
+    width: 100%;
+}
+
+.eb_grid, .eb_grid_2{
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.eb_grid img{
+    width: 30px;
+}
+
+.eb_grid_2 img{
+    width: 40px;
+}
